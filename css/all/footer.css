@@ -1,0 +1,254 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 72vh;
+  background: var(--accent-color);
+  margin-top: 27vh;
+  padding: 7% 7% 3.2% 7%;
+  bottom: 0;
+  border-top: 3px solid var(--accent-color2);
+}
+
+footer h3 {
+  font-size: 1.75rem;
+  color: #fff;
+  margin-top: -2.25rem;
+}
+
+.footer__top {
+  margin-top: 2rem;
+}
+
+.footer__top span {
+  display: flex;
+}
+
+.footer__top img {
+  margin-top: -2rem;
+  margin-right: 0.4rem;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.footer__top ul {
+  margin-top: 0.6rem;
+}
+
+.footer__top ul li {
+  display: inline-block;
+  font-size: 0.82rem;
+  margin-right: 0.73rem;
+}
+
+.footer__top ul a {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+
+.footer__bot {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.8rem;
+}
+
+.footer__left h5 {
+  font-size: 0.97rem;
+  color: #d4d4d4;
+}
+
+.footer__left h5 {
+  font-weight: 100;
+}
+
+.footer__left h5:first-child {
+  margin-bottom: 0.8rem;
+}
+
+.footer__rigth {
+  margin-top: 12vh;
+}
+
+.footer__rigth li a[href^='tel'] {
+  color: var(--accent-color2);
+}
+
+.footer__rigth li {
+  display: inline-block;
+  font-size: 0.86rem;
+  margin-right: 0.75rem;
+  color: #d4d4d4;
+  text-decoration: none;
+}
+
+.footer__rigth ul {
+  margin-top: -0.95rem;
+  margin-bottom: 0.95rem;
+}
+
+.footer__socials {
+  margin-top: 1.8rem;
+}
+
+.footer__socials a {
+  text-decoration: none;
+}
+
+.footer__socials svg path {
+  color: #fff;
+}
+
+.footer__socials svg {
+  margin-right: 1rem;
+}
+
+.footer__socials svg path {
+  transition: 300ms;
+}
+
+.footer__socials svg:hover > path {
+  opacity: 85%;
+}
+
+.footer__subtitle {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #e7e7e7;
+  margin-top: -0.36rem;
+  font-weight: 500;
+}
+
+@media all and (min-width: 1050px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 57vh;
+    background: var(--accent-color);
+    margin-top: 27vh;
+    padding: 3.2% 7% 3.2% 7%;
+    bottom: 0;
+  }
+
+  footer h3 {
+    font-size: 2.6rem;
+    margin-top: initial;
+    color: #fff;
+  }
+
+  .footer__top ul {
+    margin-top: 0.53rem;
+  }
+
+  .footer__top ul li {
+    display: inline-block;
+    font-size: 0.97rem;
+    margin-right: 1.33rem;
+    position: relative;
+  }
+
+  .footer__top li::after {
+    content: '';
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background: var(--accent-color2);
+    transform: scale(0);
+    transition: 260ms;
+  }
+
+  .footer__top li:hover::after {
+    transform: scale(1);
+  }
+
+  .footer__top ul a {
+    color: #d4d4d4;
+    text-decoration: none;
+  }
+
+  .footer__bot {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .footer__left h5 {
+    font-size: 0.97rem;
+    color: #d4d4d4;
+  }
+
+  .footer__left h5 {
+    font-weight: 100;
+  }
+
+  .footer__left h5:first-child {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer__rigth li {
+    display: inline-block;
+    font-size: 1.02rem;
+    margin-right: 1.33rem;
+    color: #d4d4d4;
+  }
+
+  .footer__rigth li a[href^='tel'] {
+    color: var(--accent-color2);
+  }
+
+  .footer__rigth ul {
+    margin-top: -0.95rem;
+    margin-bottom: 0.95rem;
+  }
+
+  .footer__socials {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer__socials a {
+    text-decoration: none;
+  }
+
+  .footer__socials svg path {
+    fill: #fff;
+  }
+
+  .footer__socials svg {
+    margin-right: 1rem;
+  }
+
+  .footer__socials svg path {
+    transition: 300ms;
+  }
+
+  .footer__socials svg:hover > path {
+    opacity: 85%;
+  }
+
+  .footer__top {
+    margin-top: 0rem;
+  }
+
+  .footer__subtitle {
+    display: inline-block;
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 800;
+  }
+
+  .footer__top img {
+    margin-top: 0.78rem;
+    width: 2.55rem;
+    margin-right: 0.8rem;
+    height: 2.55rem;
+  }
+}

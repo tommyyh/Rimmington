@@ -1,0 +1,240 @@
+.contact {
+  padding: 8rem 0 0 7%;
+}
+
+.contact h2 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+.contact h2::after {
+  content: '- Mon - Sun: 9:00 - 18:30';
+  font-size: 0.7rem;
+  color: #6b6b6b;
+  display: inline-block;
+}
+
+.contact h2 span {
+  display: block;
+}
+
+.contact__forms {
+  margin-top: 0.3rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__form label {
+  position: absolute;
+  top: 46%;
+  margin-left: 4%;
+  font-size: 0.81rem;
+  color: #000;
+  transition: ease 300ms;
+  z-index: 2;
+}
+
+.contact__form_textarea label {
+  position: absolute;
+  margin-left: 4%;
+  font-size: 0.81rem;
+  color: #000;
+  top: 19%;
+  transition: ease 300ms;
+  z-index: 2;
+}
+
+.contact__form input {
+  width: 80%;
+  height: 3.2rem;
+  background: #fff;
+  color: #000;
+  margin-top: 0.7rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+  border: none;
+  padding: 3% 4% 0 4%;
+  transition: ease 300ms;
+  font-weight: 300;
+  box-shadow: 2px 2px 5px #dbdbdb;
+}
+
+.contact__form_textarea {
+  position: relative;
+}
+
+.contact__form_textarea textarea {
+  width: 80%;
+  font-weight: 100;
+  height: 7.5rem;
+  background: #fff;
+  color: #000;
+  margin-top: 0.9rem;
+  transition: ease 300ms;
+  font-size: 0.9rem;
+  border: none;
+  padding: 7% 4% 4% 4%;
+  outline: none;
+  font-weight: 300;
+  font-family: var(--font-family);
+  box-shadow: 2px 2px 5px #dbdbdb;
+}
+
+.contact button {
+  font-size: 0.96rem;
+  font-weight: 400;
+  color: #fff;
+  width: 46%;
+  border: none;
+  height: 3rem;
+  background: var(--accent-color2);
+  margin-top: 1.2rem;
+}
+
+#success {
+  color: #17dd52;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+#project_details {
+  display: none;
+}
+
+@media all and (min-width: 1050px) {
+  .contact {
+    display: flex;
+    width: 100%;
+    padding: 11rem 0 0 8%;
+  }
+
+  .contact h2 {
+    font-size: 3.7rem;
+    line-height: 4.5rem;
+    margin-left: 11%;
+    margin-bottom: 0;
+  }
+
+  .contact__aside {
+    width: 49%;
+  }
+
+  .contact h2 span {
+    display: block;
+  }
+
+  .contact__forms {
+    width: 50%;
+    margin-top: 0rem;
+  }
+
+  .contact__form {
+    position: relative;
+  }
+
+  .contact__form label {
+    position: absolute;
+    top: 47%;
+    margin-left: 4%;
+    font-size: 0.88rem;
+    color: #000;
+    transition: ease 300ms;
+    z-index: 2;
+  }
+
+  .contact__form_textarea label {
+    position: absolute;
+    margin-left: 4%;
+    font-size: 0.88rem;
+    color: #000;
+    top: 22%;
+    transition: ease 300ms;
+    z-index: 2;
+  }
+
+  .contact__form input {
+    width: 72%;
+    height: 3.62rem;
+    background: #fff;
+    color: #000;
+    margin-top: 0.9rem;
+    font-weight: 100;
+    font-size: 0.96rem;
+    border: none;
+    padding: 2.5% 4% 0 4%;
+    transition: ease 300ms;
+    font-weight: 300;
+    box-shadow: 2px 2px 5px #dbdbdb;
+  }
+
+  .contact__form_textarea {
+    position: relative;
+  }
+
+  .contact__form_textarea textarea {
+    width: 72%;
+    font-weight: 100;
+    height: 7.5rem;
+    background: #fff;
+    color: #000;
+    margin-top: 0.96rem;
+    transition: ease 300ms;
+    font-size: 0.9rem;
+    border: none;
+    padding: 5% 4% 4% 4%;
+    outline: none;
+    font-weight: 300;
+    font-family: var(--font-family);
+    box-shadow: 2px 2px 5px #dbdbdb;
+  }
+
+  .contact button {
+    font-size: 1.066rem;
+    font-weight: 400;
+    color: #fff;
+    width: 35%;
+    border: none;
+    height: 3.35rem;
+    background: var(--accent-color2);
+    margin-top: 2.25rem;
+  }
+
+  .contact button:hover {
+    background: var(--hover);
+  }
+
+  #success {
+    color: #0cc543;
+    font-weight: 100;
+    font-size: 0.88rem;
+    margin-top: 1rem;
+    margin-left: 11%;
+    display: none;
+  }
+
+  #project_details {
+    display: initial;
+    list-style: none;
+  }
+
+  #project_details li {
+    font-size: 1.03rem;
+    color: #7c7c7c;
+    margin-top: 0.8rem;
+    font-weight: 100;
+    margin-left: 11%;
+  }
+
+  #project_details li:first-child {
+    margin-top: 2.2rem;
+  }
+
+  .contact h2::after {
+    display: none;
+  }
+}

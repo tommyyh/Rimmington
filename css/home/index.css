@@ -1,0 +1,499 @@
+@import url('../all/resets.css');
+@import url('../all/nav.css');
+@import url('./wwd.css');
+@import url('./map.css');
+@import url('./images.css');
+
+.success_message_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 3rem;
+  background: #23cf7f;
+  position: fixed;
+  right: 0;
+  top: 14vh;
+  transition: ease 200ms;
+  z-index: 21;
+  padding-left: 5%;
+}
+
+.success_message {
+  font-size: 0.84rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../images/vaccine-img2.png');
+  background-size: cover;
+  padding: 20% 0 0 6%;
+}
+
+.hero h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  color: #fff;
+}
+
+.hero h1 span {
+  display: inline-block;
+  font-weight: 10000;
+  text-decoration: underline;
+  color: var(--accent-color2);
+}
+
+.hero button {
+  width: 15rem;
+  height: 4rem;
+  background: var(--accent-color2);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 400;
+  border: none;
+  margin-top: 2rem;
+}
+
+.vaccines {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26vh;
+}
+
+.vaccines img {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+}
+
+.vaccines h2 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-top: 2rem;
+}
+
+.vaccines h3 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-top: 4rem;
+}
+
+.vaccines p {
+  font-size: 0.88rem;
+  margin: 0.77rem 10% 2.66rem 0;
+  color: #505050;
+}
+
+.vaccines li {
+  font-size: 0.933rem;
+  color: #666666;
+  font-weight: 100;
+  margin: 1.2rem 2% 0 5%;
+  line-height: 1.5rem;
+}
+
+.vaccines ul {
+  margin-top: 0.8rem;
+}
+
+.vaccines div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 7%;
+}
+
+.info {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  padding: 0 7% 0 7%;
+  width: 100%;
+}
+
+.info__cont {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.info__cont h4 {
+  font-size: 1rem;
+  color: #3d3d3d;
+  font-weight: 600;
+  margin-left: 1rem;
+  line-height: 1.8rem;
+}
+
+.info__cont span {
+  display: block;
+}
+
+.info__cont img {
+  width: 3.7rem;
+  height: 3.7rem;
+}
+
+.popup {
+  display: none;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  width: 90%;
+  height: 89vh;
+  background: #fff;
+  position: fixed;
+  right: initial;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6% 6% 6% 6%;
+  overflow-y: scroll;
+  z-index: 50;
+}
+
+.popup_background {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 50%;
+}
+
+.popup__close {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1.3rem;
+  color: var(--accent-color2);
+  cursor: pointer;
+}
+
+.popup__imgs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup__imgs img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+.popup__top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.cross::before {
+  content: '';
+  position: absolute;
+  width: 1.3rem;
+  height: 0.13rem;
+  background: #000;
+  transform: rotate(-45deg);
+}
+
+.cross::after {
+  content: '';
+  position: absolute;
+  width: 1.3rem;
+  height: 0.13rem;
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.popup h3 {
+  font-size: 1.3rem;
+}
+
+.popup a {
+  color: var(--accent-color2);
+  font-size: 0.875em;
+  transition: 200ms;
+  margin-top: 0.1rem;
+  margin-bottom: 1.7rem;
+}
+
+.popup a:hover {
+  color: var(--accent-color2);
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-image: url('../../images/vaccine-img.png');
+    background-size: cover;
+  }
+}
+
+@media all and (min-width: 1050px) {
+  .success_message_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+    height: 3rem;
+    background: #23cf7f;
+    position: fixed;
+    right: 0;
+    top: 14vh;
+    transition: ease 200ms;
+    padding-left: 0;
+    z-index: 21;
+  }
+
+  .success_message {
+    font-size: 0.84rem;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/vaccine-img.png');
+    padding: 8% 20% 0 7%;
+  }
+
+  .hero h1 span {
+    text-decoration: underline;
+    color: var(--accent-color2);
+    display: inline-block;
+  }
+
+  .hero h1 {
+    font-size: 2.35rem;
+    color: #fff;
+    line-height: 3.98rem;
+  }
+
+  .hero button {
+    width: 18.1rem;
+    height: 4.62rem;
+    background: var(--accent-color2);
+    color: #fff;
+    font-size: 1.27rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 3rem;
+  }
+
+  .hero button:hover {
+    background: var(--hover);
+  }
+
+  .vaccines {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 26vh;
+  }
+
+  .vaccines img {
+    width: 32rem;
+    height: 28rem;
+  }
+
+  .vaccines h2 {
+    font-size: 2.8rem;
+    margin-top: 0;
+  }
+
+  .vaccines h3 {
+    font-size: 1.8rem;
+    margin-left: 0.22rem;
+    margin-top: 4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .vaccines li {
+    font-size: 0.933rem;
+    color: #666666;
+    font-weight: 100;
+    margin: 0.8rem 3% 0 3.3%;
+    line-height: 1.5rem;
+  }
+
+  .vaccines p {
+    font-size: 0.933rem;
+    color: #464646;
+    font-weight: 100;
+    margin-left: 0.22rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .vaccines ul {
+    margin-top: 0.8rem;
+  }
+
+  .vaccines div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7%;
+  }
+
+  .info {
+    margin-top: 28.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 14% 0 14%;
+    width: 100%;
+  }
+
+  .info__cont {
+    display: flex;
+    align-items: center;
+  }
+
+  .info__cont h4 {
+    font-size: 1.2rem;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-left: 1.7rem;
+    line-height: 2.1rem;
+  }
+
+  .info__cont span {
+    display: block;
+  }
+
+  .info__cont img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .popup {
+    display: none;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+    text-align: initial;
+    width: 38%;
+    height: 85vh;
+    background: #fff;
+    position: fixed;
+    right: initial;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.4% 2% 1.4% 2%;
+    overflow-y: scroll;
+    z-index: 50;
+  }
+
+  .popup_background {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 50%;
+  }
+
+  .popup__close {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent-color2);
+    margin-top: 0.77rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .popup__imgs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .popup__imgs img {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .popup__top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .cross::before {
+    content: '';
+    position: absolute;
+    width: 1.3rem;
+    height: 0.13rem;
+    background: #000;
+    transform: rotate(-45deg);
+  }
+
+  .cross::after {
+    content: '';
+    position: absolute;
+    width: 1.3rem;
+    height: 0.13rem;
+    background: #000;
+    transform: rotate(45deg);
+  }
+
+  .popup h3 {
+    font-size: 1.55rem;
+  }
+
+  .popup a {
+    color: var(--accent-color2);
+    font-size: 0.87rem;
+    transition: 200ms;
+    margin-top: 0.2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .popup a:hover {
+    color: var(--accent-color2);
+  }
+}

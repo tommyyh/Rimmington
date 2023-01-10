@@ -1,0 +1,55 @@
+.images {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 50% 50%);
+  row-gap: 1.7%;
+  width: 100%;
+  padding: 0 7% 0 7%;
+  margin-top: 12.8rem;
+}
+
+.images img {
+  width: 98%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.images a {
+  color: var(--accent-color2);
+  margin: 1.74rem -24% 0 auto;
+  font-size: 1.2rem;
+  transition: 240ms;
+}
+
+.images a:hover {
+  color: var(--hover);
+}
+
+@media all and (min-width: 1025px) {
+  .images {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 50% 50%);
+    row-gap: 2%;
+    width: 100%;
+    padding: 0 7% 0 7%;
+    margin-top: 12.8rem;
+  }
+
+  .images img {
+    width: 98%;
+    height: 44vh;
+    object-fit: cover;
+  }
+
+  .images a {
+    color: var(--accent-color2);
+    margin: 1.74rem -7% 0 auto;
+    font-size: 1.2rem;
+    transition: 240ms;
+  }
+
+  .images a:hover {
+    color: var(--hover);
+  }
+}

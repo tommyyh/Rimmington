@@ -1,0 +1,182 @@
+.strengths {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 9rem;
+}
+
+.strengths h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+.strengths h2::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background: var(--accent-color2);
+  left: 44%;
+  margin-top: 3.7rem;
+}
+
+.strengths__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 3.9rem;
+}
+
+.strengths__card:first-child {
+  margin-top: 3.75rem;
+}
+
+.strengths__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #45aec3;
+  border-radius: 50%;
+}
+
+.strengths__card img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.strengths__card h3 {
+  font-size: 1.3rem;
+  margin-top: 1.65rem;
+  color: #464646;
+  text-align: center;
+}
+
+.strengths__card h3 span {
+  display: block;
+}
+
+.strengths__card a {
+  color: var(--accent-color2);
+  margin-top: 2rem;
+}
+
+.strengths__card h3 span {
+  display: inline-block;
+}
+
+.strengths__card p {
+  font-size: 0.85rem;
+  line-height: 1.45rem;
+  font-weight: 200;
+  color: #818181;
+  text-align: center;
+  margin: 1rem 15% 0 15%;
+}
+
+@media all and (min-width: 1025px) {
+  .strengths {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 9rem;
+  }
+
+  .strengths__cards {
+    display: flex;
+    width: 100%;
+    padding: 2% 8% 0 8%;
+  }
+
+  .strengths h2 {
+    font-size: 3.15rem;
+    position: relative;
+  }
+
+  .strengths h2::after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    background: var(--accent-color2);
+    left: 45%;
+    margin-top: 5.3rem;
+  }
+
+  .strengths__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 3.5rem;
+  }
+
+  .strengths__card:first-child {
+    margin-top: 3.75rem;
+  }
+
+  .strengths__cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #45aec3;
+    border-radius: 50%;
+  }
+
+  .strengths__card img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .strengths__card h3 {
+    text-align: center;
+    font-size: 1.41rem;
+    margin-top: 1.65rem;
+    color: #464646;
+  }
+
+  .strengths__card h3 span {
+    display: block;
+  }
+
+  .strengths__card p {
+    font-size: 0.92rem;
+    line-height: 1.68rem;
+    font-weight: 200;
+    color: #818181;
+    text-align: center;
+    margin: 0.8rem 10% 0 10%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .strengths h2 {
+    font-size: 2.3rem;
+    position: relative;
+  }
+
+  .strengths h2::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 1px;
+    background: var(--accent-color);
+    left: 43%;
+    margin-top: 3.5rem;
+  }
+
+  .strengths__card p {
+    font-size: 0.85rem;
+    line-height: 1.45rem;
+    font-weight: 200;
+    color: #818181;
+    text-align: center;
+    margin: 0.7rem 20% 0 20%;
+  }
+}

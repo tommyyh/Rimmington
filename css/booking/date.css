@@ -1,0 +1,115 @@
+@import url('../all/resets.css');
+@import url('../all/nav.css');
+@import url('./date_form.css');
+
+.date_picker {
+  display: grid;
+  row-gap: 7%;
+  grid-template-columns: repeat(auto-fill, 20%);
+  width: 100%;
+  height: 10rem;
+  background: #fafafa;
+  margin-top: 2rem;
+  padding: 7.4% 5% 0 7.7%;
+  overflow-y: scroll;
+}
+
+.date_picker::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.date_picker::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.date_picker::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+}
+
+.date_picker::-webkit-scrollbar-thumb:hover {
+  background: #cecece;
+}
+
+.date_picker div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: #eeeeee;
+}
+
+.date_picker_item_dis {
+  cursor: not-allowed;
+}
+
+.date_picker_item:hover {
+  border: 1.5px solid #ffb498;
+}
+
+.date_picker_item {
+  cursor: pointer;
+}
+
+#book_appointment {
+  background: #858585;
+  cursor: not-allowed;
+  margin-bottom: 3.2rem;
+}
+
+@media all and (min-width: 1050px) {
+  .date_picker {
+    display: grid;
+    row-gap: 5%;
+    grid-template-columns: repeat(auto-fill, 16.667%);
+    width: 100%;
+    height: 10rem;
+    background: #fafafa;
+    margin-top: 2rem;
+    padding: 7.4% 5% 0 7.7%;
+    overflow-y: scroll;
+  }
+
+  .date_picker::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+
+  .date_picker::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .date_picker::-webkit-scrollbar-thumb {
+    background: #d8d8d8;
+  }
+
+  .date_picker::-webkit-scrollbar-thumb:hover {
+    background: #cecece;
+  }
+
+  .date_picker div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: #eeeeee;
+  }
+
+  .date_picker_item_dis {
+    cursor: not-allowed;
+  }
+
+  .date_picker_item:hover {
+    border: 1.5px solid #45aec3;
+  }
+
+  .date_picker_item {
+    cursor: pointer;
+  }
+
+  #book_appointment {
+    background: #858585;
+    cursor: not-allowed;
+    margin-bottom: 3.2rem;
+  }
+}

@@ -1,0 +1,131 @@
+@import url('../all/resets.css');
+@import url('../all/nav.css');
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url('../../images/about-img.png');
+  padding: 4vh 10% 0 7%;
+  background-size: cover;
+}
+
+.about h1 {
+  font-size: 3.34rem;
+  color: #fff;
+}
+
+.about p {
+  color: #dfdfdf;
+  font-size: 0.834rem;
+  font-weight: 200;
+  margin-top: 0.3rem;
+  line-height: 1.48rem;
+}
+
+.about h6 {
+  color: var(--accent-color2);
+  font-size: 1.22rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.covid {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-top: 3rem;
+}
+
+.covid h2 {
+  font-size: 1.8rem;
+}
+
+.covid p {
+  color: #505050;
+  font-size: 0.83rem;
+  font-weight: 200;
+  margin-top: 0.5rem;
+  line-height: 1.48rem;
+}
+
+.covid img {
+  width: 100%;
+  height: 100%;
+  margin-top: 3.3rem;
+  margin-bottom: 3.3rem;
+}
+
+.covid li {
+  list-style-type: none;
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  color: #505050;
+}
+
+@media all and (min-width: 1025px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../../images/about-img2.png');
+    background-size: cover;
+    padding: 4vh 45% 0 7%;
+  }
+
+  .about h1 {
+    font-size: 4.3rem;
+    color: #fff;
+  }
+
+  .about p {
+    color: #ececec;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    line-height: 1.8rem;
+  }
+
+  .about h6 {
+    color: var(--accent-color2);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+
+  .covid {
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 4.3rem;
+  }
+
+  .covid h2 {
+    font-size: 2.5rem;
+  }
+
+  .covid p {
+    color: #535353;
+    font-size: 0.86rem;
+    font-weight: 200;
+    margin-top: 0.8rem;
+    line-height: 1.7rem;
+    margin-right: 15%;
+  }
+
+  .covid img {
+    width: 29%;
+    height: 29%;
+    margin-top: 3.9rem;
+    margin-bottom: 3.9rem;
+  }
+
+  .covid li {
+    list-style-type: none;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+    color: #535353;
+  }
+}

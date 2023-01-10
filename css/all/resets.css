@@ -1,0 +1,67 @@
+@import url('./footer.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fff;
+  --primary-color2: #f0f0f0;
+  --secondary-color: #000;
+  --secondary-color2: #e4b472;
+  --accent-color: #05314d;
+  --accent-color2: #e4b472;
+  --hover: #dba860;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--primary-color2);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  transition: ease 225ms;
+}
+
+button:focus {
+  outline: initial;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  outline: initial;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  outline: initial;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (min-height: 1365px) and (max-height: 1366px) {
+  html {
+    font-size: 34px;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  html {
+    font-size: 1.25vw;
+  }
+}

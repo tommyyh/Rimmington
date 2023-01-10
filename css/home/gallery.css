@@ -1,0 +1,55 @@
+@import url('../all/nav.css');
+
+.gallery_title {
+  font-size: 2rem;
+  margin-left: 7%;
+  margin-top: 9rem;
+}
+
+.gallery {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 50% 50%);
+  row-gap: 0.6%;
+  width: 100%;
+  padding: 0 7% 0 7%;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 97%;
+  height: 36vh;
+  object-fit: cover;
+}
+
+.gallery img:last-child {
+  margin-bottom: 10vh;
+}
+
+@media all and (min-width: 1025px) {
+  .gallery_title {
+    font-size: 3.3rem;
+    margin-left: 7%;
+    margin-top: 9rem;
+  }
+
+  .gallery {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 50% 50%);
+    row-gap: 0.5%;
+    width: 100%;
+    padding: 0 7% 0 7%;
+    margin-top: 2rem;
+  }
+
+  .gallery img {
+    width: 97%;
+    height: 53vh;
+    object-fit: cover;
+  }
+
+  .gallery img:last-child {
+    margin-bottom: 28vh;
+  }
+}

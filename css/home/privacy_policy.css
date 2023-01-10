@@ -1,0 +1,92 @@
+@import url('../all/resets.css');
+@import url('../all/nav.css');
+
+.pp {
+  padding: 20vh 7% 0 7%;
+}
+
+.pp2 {
+  padding: 0 7% 0 7%;
+}
+
+.pp h1 {
+  font-size: 2.3rem;
+  line-height: 3.12rem;
+}
+
+.pp p {
+  font-size: 0.92rem;
+  color: #555555;
+  margin-top: 0.8rem;
+}
+
+.pp2 h2 {
+  font-size: 1.3rem;
+  margin-top: 3.5rem;
+  color: #272727;
+}
+
+.pp2 p {
+  font-size: 0.92rem;
+  color: #555555;
+  margin-top: 0.8rem;
+}
+
+.pp2 li {
+  font-size: 0.92rem;
+  color: #555555;
+  margin-top: 0.8rem;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}
+
+.pp2 li:first-child {
+  margin-top: 1.5rem;
+}
+
+@media all and (min-width: 1025px) {
+  .pp {
+    padding: 20vh 10% 0 7%;
+  }
+
+  .pp2 {
+    padding: 0 25% 0 7%;
+  }
+
+  .pp h1 {
+    font-size: 2.88rem;
+    line-height: 3.12rem;
+  }
+
+  .pp p {
+    font-size: 0.98rem;
+    line-height: 1.8rem;
+    color: #686868;
+    margin-top: 1.2rem;
+  }
+
+  .pp2 li {
+    font-size: 0.98rem;
+    line-height: 1.8rem;
+    color: #686868;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+  }
+
+  .pp2 li:first-child {
+    margin-top: 1.5rem;
+  }
+
+  .pp2 h2 {
+    font-size: 1.6rem;
+    margin-top: 3.5rem;
+    color: #272727;
+  }
+
+  .pp2 p {
+    font-size: 0.98rem;
+    line-height: 1.8rem;
+    color: #686868;
+    margin-top: 0.6rem;
+  }
+}

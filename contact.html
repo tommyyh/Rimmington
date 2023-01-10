@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/svg/rimmingtons.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./js/form.js" defer></script>
+    <link rel="stylesheet" href="./css/contact/contact.css" />
+    <title>Rimmington Pharmacy • Contact</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="./index.html" class="nav__left">
+            <img src="./images/svg/rimmingtons.svg" alt="Rimmingtons" />
+            <h1 class="nav__mobile_title">
+              <div>Rimmington</div>
+              <div class="nav__subtitle">Pharmacy</div>
+            </h1>
+            <h1 class="nav__desktop_title">
+              <div>Rimmington Pharmacy</div>
+              <div class="nav__subtitle_d">
+                Bradford’s oldest pharmacy founded in 1842
+              </div>
+            </h1>
+          </a>
+
+          <ul class="nav__links">
+            <li class="nav__link"><a href="./index.html">Home</a></li>
+            <li class="nav__link">
+              <a href="./about.html">About</a>
+            </li>
+            <span style="position: relative">
+              <li class="nav__link" style="color: #f0f0f0; cursor: pointer">
+                Booking
+              </li>
+
+              <div class="dropdown">
+                <a href="./booking-public.html">Public</a>
+                <a href="./booking-workplace.html">Workplace</a>
+              </div>
+            </span>
+            <li class="nav__link">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav__link"><a href="./contact.html">Contact</a></li>
+          </ul>
+
+          <div class="burger"></div>
+
+          <div class="menu">
+            <span>
+              <h3>
+                Rimmington
+                <div class="nav__subtitle2">Pharmacy</div>
+              </h3>
+
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li>
+                  <a href="./booking-public.html"
+                    ><span style="font-weight: 900; color: #1f1f1f">FLU</span>
+                    Booking - Public</a
+                  >
+                </li>
+                <li>
+                  <a href="./booking-workplace.html"
+                    ><span style="font-weight: 900; color: #1f1f1f">FLU</span>
+                    Booking - Workplace</a
+                  >
+                </li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </span>
+
+            <div class="nav__socials">
+              <a
+                href="https://m.facebook.com/pages/category/Pharmacy---Drugstore/Rimmingtons-Pharmacy-483026411742697/"
+                target="_blank"
+              >
+                <svg
+                  width="1.65rem"
+                  height="1.65rem"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.5312 15C29.5312 6.97266 23.0273 0.46875 15 0.46875C6.97266 0.46875 0.46875 6.97266 0.46875 15C0.46875 22.2527 5.78262 28.2645 12.7295 29.3555V19.2006H9.03809V15H12.7295V11.7984C12.7295 8.15684 14.8975 6.14531 18.218 6.14531C19.8082 6.14531 21.4711 6.42891 21.4711 6.42891V10.0031H19.6383C17.8336 10.0031 17.2705 11.1234 17.2705 12.2725V15H21.3006L20.6561 19.2006H17.2705V29.3555C24.2174 28.2645 29.5312 22.2527 29.5312 15Z"
+                    fill="#000"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="contact">
+        <div class="contact__aside">
+          <h2><span>Get In Touch</span> With Us Today!</h2>
+
+          <h5 id="success">Message successfully sent</h5>
+
+          <ul id="project_details">
+            <li>- info@rimmingtonspharmacy.com</li>
+            <li>- 9 Bridge St, Bradford BD1 1RX, UK</li>
+            <li>- +44 1274 726611</li>
+            <li>- Mon - Sun: 9:00 - 18:30</li>
+          </ul>
+        </div>
+
+        <div class="contact__forms">
+          <div class="contact__form">
+            <label for="name" id="name_label">Full Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="contact__form">
+            <label for="email" id="email_label">Email Address</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="contact__form_textarea">
+            <label for="msg" id="msg_label">Your Message</label>
+            <textarea
+              name="msg"
+              id="msg"
+              name="msg"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button class="send_button">Send Message</button>
+        </div>
+      </main>
+
+      <div class="google_maps_p">
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.77702588643!2d-1.7554744841446457!3d53.79345598007519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be149407af803%3A0x4cb504137d447a69!2s9%20Bridge%20St%2C%20Bradford%20BD1%201RX%2C%20UK!5e0!3m2!1sen!2scz!4v1629977462506!5m2!1sen!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            title="google-maps"
+          ></iframe>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer__top">
+          <span>
+            <img src="./images/svg/rimmingtons.svg" alt="Rimmington" />
+            <h3>
+              Rimmington
+              <div class="footer__subtitle">Pharmacy</div>
+            </h3>
+          </span>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./booking-public.html">Booking - Public</a></li>
+            <li>
+              <a href="./booking-workplace.html">Booking - Workplace</a>
+            </li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./privacy-policy.html">Privacy & Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__bot">
+          <div class="footer__left">
+            <h5>
+              Made by: Tommy Hoang (<a
+                target="_blank"
+                style="color: #dba860"
+                href="https://github.com/tommyyh"
+                >Github</a
+              >)
+            </h5>
+            <h5>&copy; This site is no longer active</h5>
+          </div>
+
+          <div class="footer__rigth">
+            <ul>
+              <li>9 Bridge St, Bradford BD1 1RX, UK</li>
+              <li>01274 726611</li>
+            </ul>
+
+            <div class="footer__socials">
+              <a
+                href="https://m.facebook.com/pages/category/Pharmacy---Drugstore/Rimmingtons-Pharmacy-483026411742697/"
+                target="_blank"
+              >
+                <svg
+                  width="1.65rem"
+                  height="1.65rem"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.5312 15C29.5312 6.97266 23.0273 0.46875 15 0.46875C6.97266 0.46875 0.46875 6.97266 0.46875 15C0.46875 22.2527 5.78262 28.2645 12.7295 29.3555V19.2006H9.03809V15H12.7295V11.7984C12.7295 8.15684 14.8975 6.14531 18.218 6.14531C19.8082 6.14531 21.4711 6.42891 21.4711 6.42891V10.0031H19.6383C17.8336 10.0031 17.2705 11.1234 17.2705 12.2725V15H21.3006L20.6561 19.2006H17.2705V29.3555C24.2174 28.2645 29.5312 22.2527 29.5312 15Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

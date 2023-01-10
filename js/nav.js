@@ -16,6 +16,7 @@
 
   if (
     window.location.pathname === '/index.html' ||
+    window.location.pathname === '/' ||
     window.location.pathname === '/about.html'
   ) {
     nav.classList.add('nav_trans');
@@ -23,6 +24,7 @@
 
   if (
     window.location.pathname === '/index.html' ||
+    window.location.pathname === '/' ||
     window.location.pathname === '/about.html'
   ) {
     window.addEventListener('scroll', () => {
